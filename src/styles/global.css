@@ -1,0 +1,68 @@
+:root {
+	--text-font: 'Noto Sans SC', system-ui, sans-serif;
+	--serif-font: 'IBM Plex Serif', serif;
+	--monospace-font: monospace;
+
+	--text-color: #341d00;
+	--background-color: #fffbf6;
+	--code-background-color: #ffffff;
+	--link-base-color: #9b393a;
+	--link-visited-color: #9b393a;
+	--link-hover-color: #341d00;
+	--border-color: #8f8181;
+
+	color-scheme: light;
+	font-family: var(--text-font);
+	font-size: 16px;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--serif-font);
+	margin: 1em 0;
+}
+
+p {
+	margin: 16px 0;
+}
+
+a:link {
+	color: var(--link-base-color);
+	text-decoration: none;
+}
+
+a:visited {
+	color: var(--link-visited-color);
+}
+
+a:hover {
+	color: var(--link-hover-color);
+	text-decoration: underline;
+}
+
+code {
+	font-family: var(--monospace-font);
+	font-size: 0.9em;
+	font-weight: 400;
+	background-color: var(--code-background-color);
+	color: var(--text-color);
+	padding: 0.05em 0.2em;
+	border: 1px solid var(--border-color);
+}
+
+table {
+	border-collapse: collapse;
+	border: 2px solid var(--border-color);
+}
+
+th,
+td {
+	padding: 6px;
+	border: 1px solid var(--border-color);
+}

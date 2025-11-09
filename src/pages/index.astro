@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import Main from '../components/Main.svelte';
+import Footer from '../components/Footer.svelte';
+---
+
+<Base
+	title="About SourLemonJuice.net"
+	description="This is a domain name of 酸柠檬猹/SourLemonJuice, some web services will be deployed here."
+>
+	<div class="out-wrapper">
+		<Main />
+		<Footer />
+	</div>
+</Base>
+
+<style>
+	.out-wrapper {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+</style>
