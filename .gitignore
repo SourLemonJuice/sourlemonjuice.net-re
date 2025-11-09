@@ -1,8 +1,9 @@
 # build output
 dist/
 
-# generated types
+# generated
 .astro/
+.wrangler/
 
 # dependencies
 node_modules/
@@ -25,5 +26,3 @@ pnpm-debug.log*
 
 # VS Code
 .vscode/
-
-.wrangler/
