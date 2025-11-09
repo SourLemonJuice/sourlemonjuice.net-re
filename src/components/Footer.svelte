@@ -23,8 +23,9 @@
 		</section>
 	</nav>
 	<p class="sidenote">
+		Powered by Astro + Svelte<br />
 		Frontend, strange... @_@<br />
-		<a href="https://github.com">site repository</a>
+		<a href="https://github.com/SourLemonJuice/sourlemonjuice.net-re">site repository</a>
 	</p>
 </footer>
 
@@ -32,7 +33,7 @@
 	footer {
 		max-width: 1440px;
 		width: 100%;
-    min-height: 128px;
+		min-height: 128px;
 		margin-bottom: 12px;
 		border-top: 2px solid;
 		display: flex;
