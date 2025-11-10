@@ -4,7 +4,7 @@
 </script>
 
 <main>
-	<section style="width: 38%; min-width: 380px">
+	<section class="about-section">
 		<h1>About SourLemonJuice.net</h1>
 		<p>
 			This is a domain name of 酸柠檬猹/SourLemonJuice.<br />
@@ -25,7 +25,7 @@
 			my main site.
 		</p>
 	</section>
-	<section style="width: 62%; min-width: 300px">
+	<section class="services-section">
 		<h2>Services Reference</h2>
 		<ServiceCard header="Connectivity Test" url="https://connectivity.sourlemonjuice.net">
 			{#snippet provider()}
@@ -137,7 +137,33 @@
 		justify-content: center;
 	}
 
-	section {
+	.about-section {
+		width: 38%;
+		min-width: 380px;
 		margin-inline: 4px;
+	}
+
+	.services-section {
+		width: 62%;
+		min-width: 300px;
+		margin-inline: 4px;
+	}
+
+	@media screen and (max-width: 840px) {
+		main {
+			flex-direction: column;
+			align-items: center;
+			justify-content: start;
+		}
+
+		.about-section {
+			width: 100%;
+			min-width: 0;
+		}
+
+		.services-section {
+			width: 100%;
+			min-width: 0;
+		}
 	}
 </style>

@@ -24,8 +24,8 @@
 	</nav>
 	<p class="sidenote">
 		Powered by Astro + Svelte<br />
-		Frontend, strange... @_@<br />
-		<a href="https://github.com/SourLemonJuice/sourlemonjuice.net-re">site repository</a>
+		frontend, strange... @_@<br />
+		<a href="https://github.com/SourLemonJuice/sourlemonjuice.net-re">source code</a>
 	</p>
 </footer>
 
@@ -74,5 +74,27 @@
 	.sidenote {
 		margin: 0;
 		text-align: right;
+	}
+
+	@media screen and (max-width: 740px) {
+		footer {
+			display: block;
+		}
+
+		nav {
+			flex-direction: column;
+			width: 100%;
+			padding: 8px 0;
+		}
+
+		.group {
+			padding: 0;
+		}
+
+		.sidenote {
+			text-align: right;
+			border-top: 1px solid;
+			padding: 8px 0;
+		}
 	}
 </style>
