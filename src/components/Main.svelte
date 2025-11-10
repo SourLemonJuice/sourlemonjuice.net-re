@@ -90,15 +90,16 @@
 				</p>
 			{/snippet}
 		</ServiceCard>
-		<ServiceCard header="DNS over HTTPS Forwarding [Experimental]" url="https://dns-next.sourlemonjuice.net">
+		<ServiceCard header="DNS over HTTPS Forwarding" url="https://dns.sourlemonjuice.net">
 			{#snippet provider()}
 				Cloudflare Worker with my <a href="https://github.com/SourLemonJuice/doh-forward-worker">doh-forward-worker</a>
 			{/snippet}
 			{#snippet description()}
 				<p>
 					Use Cloudflare DNS(HTTPS) as upstream.<br />
-					Your request will be logged via Cloudflare Worker Observability. We will disable logging of sensitive information
-					after the experimental phase.
+					Your request(include query data and source IP address) <strong>will not</strong> be logged via Cloudflare Worker
+					Observability. However, the total requests number with country or region level location still be available for
+					us to see.
 				</p>
 			{/snippet}
 		</ServiceCard>
