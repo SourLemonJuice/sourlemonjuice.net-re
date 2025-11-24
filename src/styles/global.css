@@ -3,13 +3,19 @@
 	--serif-font: 'IBM Plex Serif', serif;
 	--monospace-font: monospace;
 
-	--text-color: #341d00;
-	--background-color: #fffbf6;
-	--code-background-color: #ffffff;
-	--link-base-color: #9b393a;
-	--link-visited-color: #9b393a;
-	--link-hover-color: #341d00;
-	--border-color: #8f8181;
+	/* oklch(0.11 0.005 31) */
+	--text-color: #060404;
+	/* oklch(0.97 0.005 31) */
+	--background-color: #f8f4f3;
+	/* oklch(0.99 0 0) */
+	--code-background-color: #fcfcfc;
+	/* oklch(0.48 0.12 25) */
+	--link-base-color: #963d3a;
+	--link-visited-color: var(--link-base-color);
+	/* oklch(0.3 0.12 25) */
+	--link-hover-color: #5c0109;
+	/* oklch(0.61 0.01 17.6) */
+	--border-color: #898181;
 
 	color-scheme: light;
 	font-family: var(--text-font);
