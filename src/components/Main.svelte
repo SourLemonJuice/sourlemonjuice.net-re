@@ -48,7 +48,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td><code>/generate_204</code></td>
+							<td><code>/</code> or <code>/generate_204</code></td>
 							<td>204 No Content</td>
 							<td>the simplest one, preferred this</td>
 						</tr>
