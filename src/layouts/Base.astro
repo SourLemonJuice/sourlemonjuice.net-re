@@ -9,7 +9,7 @@ const { title, description } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
-		<base target="_blank" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		<!-- Google Fonts -->
@@ -19,6 +19,8 @@ const { title, description } = Astro.props;
 			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+SC:wght@100..900&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- end Google Fonts -->
+		<base target="_blank" />
 	</head>
 	<body>
 		<slot />
