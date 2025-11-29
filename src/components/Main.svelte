@@ -20,9 +20,8 @@
 			I'm still hoping that in the future I can be able to put it to the value it deserves, I guess.
 		</p>
 		<p>
-			Also, this domain will not replace the
-			<a href="https://sourlemonjuice.github.io/SourLemonJuice-blog/"><strong>SourLemonJuice-blog</strong></a>, that's
-			my main site.
+			You can see more about me on
+			<a style="font-weight: bold;" href="https://blog.sourlemonjuice.net/">SourLemonJuice-blog</a>
 		</p>
 	</section>
 	<section class="services-section">
@@ -98,8 +97,8 @@
 				<p>
 					Use Cloudflare DNS(HTTPS) as upstream.<br />
 					Your request(include query data and source IP address) <strong>will not</strong> be logged via Cloudflare Worker
-					Observability. However, the total requests number with country or region level location still be available for
-					us to see.
+					Observability. However, the total requests number with country or region level location still be available for us
+					to see.
 				</p>
 			{/snippet}
 		</ServiceCard>
