@@ -25,7 +25,7 @@
 		</p>
 	</section>
 	<section class="services-section">
-		<h2>Services Reference</h2>
+		<h2>Infrastructure References</h2>
 		<ServiceCard header="Connectivity Test" url="http(s)://connectivity.sourlemonjuice.net">
 			{#snippet provider()}
 				<a href="https://caddyserver.com">Caddy</a>

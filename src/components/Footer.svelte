@@ -8,12 +8,6 @@
 			</ul>
 		</section>
 		<section class="group">
-			<h2>Infrastructures</h2>
-			<ul>
-				<li>↑Above↑</li>
-			</ul>
-		</section>
-		<section class="group">
 			<h2>About me</h2>
 			<ul>
 				<li><a href="https://github.com/SourLemonJuice">GitHub</a></li>
