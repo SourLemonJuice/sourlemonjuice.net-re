@@ -1,6 +1,6 @@
 :root {
 	--text-font: 'Noto Sans SC', system-ui, sans-serif;
-	--serif-font: 'IBM Plex Serif', serif;
+	--serif-font: 'IBM Plex Serif', var(--text-font);
 	--monospace-font: monospace;
 
 	/* oklch(0.11 0.005 31) */
