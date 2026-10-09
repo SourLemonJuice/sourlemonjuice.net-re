@@ -7,7 +7,7 @@
 	<section class="about-section">
 		<h1>Welcome to SourLemonJuice.net</h1>
 		<img src="https://avatars.githubusercontent.com/u/106436955?v=4" alt="My github avatar" style="height: 300px;" />
-		<p>Hi, my name is 酸柠檬猹/SourLemonJuice. I'll deploy some random web projects here.</p>
+		<p>Hi, my name is 酸柠檬猹/SourLemonJuice. I'll deploy some random web projects here!</p>
 		<p>
 			Servers cost money and require constant maintenance, so this page was deployed as a serverless Cloudflare Worker.
 			I'm still hoping that in the future I can be able to put it to the value it deserves, I guess.
@@ -19,14 +19,14 @@
 	</section>
 	<section class="services-section">
 		<h2>Infrastructure References</h2>
-		<ServiceCard header="Connectivity Test" url="http(s)://connectivity.sourlemonjuice.net">
+		<ServiceCard header="Connectivity Test" url="https://connectivity.sourlemonjuice.net">
 			{#snippet provider()}
-				<a href="https://caddyserver.com">Caddy</a>
+				<a href="https://www.cloudflare.com/products/workers/">Cloudflare Workers</a>
 			{/snippet}
 			{#snippet description()}
 				<p>
-					This domain will always connect to my cloud server instead of CDN. Maybe some system calls them captive
-					portal, like Android's <code>captive_portal_http_url</code>.<br />
+					This service runs with Cloudflare CDN. Maybe some system calls them captive portal, like Android's
+					<code>captive_portal_http_url</code>.<br />
 					This API can be used just like
 					<a href="https://connectivitycheck.gstatic.com/generate_204">connectivitycheck.gstatic.com/generate_204</a>,
 					which is used by a lot of Android devices.
@@ -64,22 +64,12 @@
 					</tbody>
 				</table>
 				<Warning>
-					{#snippet content()}
-						Before 2025-02-27, this domain was <code>https://connection.sourlemonjuice.net</code>
-					{/snippet}
+					Until 2025-02-27, this domain was <code>https://connection.sourlemonjuice.net</code>
 				</Warning>
-			{/snippet}
-		</ServiceCard>
-		<ServiceCard header="Redirect" url="https://goto.sourlemonjuice.net">
-			{#snippet provider()}
-				Cloudflare Worker with my
-				<a href="https://github.com/SourLemonJuice/redirect-worker">redirect-worker</a>
-			{/snippet}
-			{#snippet description()}
-				<p>
-					Like <a href="https://aka.ms">aka.ms</a> or <a href="https://goo.gle">goo.gle</a>, it's a regular short link
-					service. But where would I link to? The fourth dimension space, probably.
-				</p>
+				<Warning>
+					Until 2026-10-10, this service ran on a dedicated server, it has now been migrated to Cloudflare Worker. The
+					HTTP connection won't be supported.
+				</Warning>
 			{/snippet}
 		</ServiceCard>
 		<ServiceCard header="DNS over HTTPS Forwarding" url="https://dns.sourlemonjuice.net">
@@ -92,6 +82,18 @@
 					Your request(include query data and source IP address) <strong>will not</strong> be logged via Cloudflare Worker
 					Observability. However, the total requests number with country or region level location still be available for us
 					to see.
+				</p>
+			{/snippet}
+		</ServiceCard>
+		<ServiceCard header="Redirect" url="https://goto.sourlemonjuice.net">
+			{#snippet provider()}
+				Cloudflare Worker with my
+				<a href="https://github.com/SourLemonJuice/redirect-worker">redirect-worker</a>
+			{/snippet}
+			{#snippet description()}
+				<p>
+					Like <a href="https://aka.ms">aka.ms</a> or <a href="https://goo.gle">goo.gle</a>, it's a regular short link
+					service. But where would I link to? The fourth dimension space, probably.
 				</p>
 			{/snippet}
 		</ServiceCard>
@@ -109,11 +111,7 @@
 					We promise won't use your data and IP information for purposes other than querying and not to store any logs.
 					However, we don't provide any form of guarantee and do not assume any legal liability for data leakage.
 				</p>
-				<Warning>
-					{#snippet content()}
-						Service discontinued after 2025-11-09
-					{/snippet}
-				</Warning>
+				<Warning>Service discontinued at 2025-11-09.</Warning>
 			{/snippet}
 		</ServiceCard>
 	</section>

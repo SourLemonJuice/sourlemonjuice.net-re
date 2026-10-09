@@ -1,9 +1,9 @@
 <script lang="ts">
-	const { content } = $props();
+	const { children } = $props();
 </script>
 
 <p class="warning">
-	{@render content()}
+	{@render children?.()}
 </p>
 
 <style>
