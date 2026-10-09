@@ -5,23 +5,16 @@
 
 <main>
 	<section class="about-section">
-		<h1>About SourLemonJuice.net</h1>
+		<h1>Welcome to SourLemonJuice.net</h1>
+		<img src="https://avatars.githubusercontent.com/u/106436955?v=4" alt="My github avatar" style="height: 300px;" />
+		<p>Hi, my name is 酸柠檬猹/SourLemonJuice. I'll deploy some random web projects here.</p>
 		<p>
-			This is a domain name of 酸柠檬猹/SourLemonJuice.<br />
-			Some random web projects will be deployed here. Like Google, subdomains are a good thing.
-		</p>
-		<p>
-			To be clear, I would not use this domain as an online documentation for my own projects.<br />
-			I trust GitHub Pages but not something I control...
-		</p>
-		<p>
-			Servers cost money and require constant maintenance. As is the case with this index page, pure HTML services will
-			deployed on Cloudflare Pages, Which I suppose is the best solution...<br />
+			Servers cost money and require constant maintenance, so this page was deployed as a serverless Cloudflare Worker.
 			I'm still hoping that in the future I can be able to put it to the value it deserves, I guess.
 		</p>
 		<p>
 			You can see more about me on
-			<a style="font-weight: bold;" href="https://blog.sourlemonjuice.net/">SourLemonJuice-blog</a>
+			<a style="font-weight: bold;" href="https://sourlemonjuice.github.io/">SourLemonJuice-blog</a>
 		</p>
 	</section>
 	<section class="services-section">

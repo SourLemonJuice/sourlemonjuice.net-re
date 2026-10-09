@@ -3,7 +3,6 @@
 		<section class="group">
 			<h2>Web services</h2>
 			<ul>
-				<li><a href="https://git.sourlemonjuice.net/">Gitea(Git)</a></li>
 				<li><a href="https://status.sourlemonjuice.net/">Services status</a></li>
 			</ul>
 		</section>
@@ -11,8 +10,8 @@
 			<h2>About me</h2>
 			<ul>
 				<li><a href="https://github.com/SourLemonJuice">GitHub</a></li>
-				<li><a href="https://blog.sourlemonjuice.net/">SourLemonJuice-blog</a></li>
-				<li><a href="https://blog.sourlemonjuice.net/about/contacts">More contacts</a></li>
+				<li><a href="https://sourlemonjuice.github.io/">SourLemonJuice-blog</a></li>
+				<li><a href="https://sourlemonjuice.github.io/about/contacts">More contacts</a></li>
 			</ul>
 		</section>
 	</nav>
